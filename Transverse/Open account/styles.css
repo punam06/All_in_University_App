@@ -1,0 +1,145 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0A192F; /* Dark background */
+    color: #CBD5E0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #17253B; /* Slightly lighter background */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.card {
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent card */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #3182CE;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #4A5568;
+    background-color: #1E293B;
+    color: #CBD5E0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('eye-closed.png'); /* Replace with your eye icon */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.password-group.show .password-toggle {
+    background-image: url('eye-open.png'); /* Replace with your open eye icon */
+}
+
+.password-strength {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.upload-box {
+    border: 2px dashed #4A5568;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.continue-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3182CE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        padding: 20px;
+    }
+}
